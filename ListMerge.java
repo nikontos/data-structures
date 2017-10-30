@@ -67,7 +67,6 @@ public class ListMerge {
                 current = q;
             }
 
-
             while(current.next != null){
                 if (current.rep == bigListHead) return;
                 current.rep = bigListHead;
@@ -77,9 +76,5 @@ public class ListMerge {
             current.size = 1;
             current.next = bigListHead.next;
             bigListHead.next = current;
-
-
-            this.setCount --;
         }
-
 }
